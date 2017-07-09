@@ -2,6 +2,7 @@
 from craigslist import CraigslistForSale
 import os
 import time
+import math
 
 def notify(title, subtitle, message):
     t = '-title {!r}'.format(title)
@@ -30,7 +31,7 @@ for result in search.get_results(sort_by='newest', limit = 7):
     if day - int(result['datetime'][8:10]) == 0:
 	    when = str(hour - int(result['datetime'][11:13]))
     else:
-        when = str(hour+24 - int(result['datetime'][11:13]))
+        when = str(hour+(24*abs(day - int(result['datetime'][8:10]))) - int(result['datetime'][11:13]))
     print str(i) + ": " + result['price'] + ' ' + result['name'][:30] + ": " + result['url']
     #os.system(str(stri + result['url'] + strj))
     notify(title    = str(result['name'][:30]),
