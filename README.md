@@ -4,5 +4,7 @@ Pulls recent craigslist listings of cheap AMG Mercedes-Benzes in the Valley and 
 <p5>creds to: julio malegria for his craigslist interface</p><br>
 <p>https://github.com/juliomalegria/python-craigslist</p>
 
-<p>creds to: julien for his terminal notifier</p><br>
+#creds to: julien for his terminal notifier
+
 <p>https://github.com/julienXX/terminal-notifier </p>
+
