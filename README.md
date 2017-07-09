@@ -1,12 +1,13 @@
 # vrööm
-          _.-";"-._
-        .'    |    '.
-       ;      |      ;
-      |       |       |
-      |      / \      |
-       ;   /`   `\   ;
-        './       \.'
-          `-.....-'
+         _.=;;=._
+       .:-'`||`'-:.
+      //    ||    \\
+     ||     ||     ||
+     ||   ,//\\,   ||
+      \\,//'  '\\,//
+       './.____.\.'
+         `------'
+ 
 
 ### Pulls several recent craigslist listings of cheap AMG Mercedes-Benzes in the Los Angeles San Fernando Valley and pops them up as OSX Notifications
 
