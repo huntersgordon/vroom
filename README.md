@@ -10,3 +10,11 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>https://github.com/julienXX/terminal-notifier </p>
 
+# usage
+```
+pip install python-craigslist
+brew install terminal-notifier
+python2.7 openAMG.py
+
+```
+
