@@ -3,6 +3,7 @@ from craigslist import CraigslistForSale
 import os
 import time
 import math
+#import StringIO
 
 def notify(title, subtitle, message):
     t = '-title {!r}'.format(title)
@@ -26,8 +27,16 @@ when = ""
 #os.system("osascript -e \'tell application \"Safari\" to activate\'")
 
 i = 1
+
+with open('cars.txt', 'r') as myfile:
+    data=myfile.read().replace('\n', '')
+
 #took out geotagged=True
 for result in search.get_results(sort_by='newest', limit = 7):
+    if (data.find(result['name']) == -1):
+        with open("cars.txt", "a") as myfile:
+            myfile.write(result['name'] + "\n")
+        print "listing: " + result['name'] + "added."
     if day - int(result['datetime'][8:10]) == 0:
 	    when = str(hour - int(result['datetime'][11:13]))
     else:
