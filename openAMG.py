@@ -76,3 +76,5 @@ else:
     with open("cars.html", "a") as myfile:
         myfile.write("<p style = \"font-size: 30px;\">--------------------------------------------pulled on: " + strftime("%a, %d %b %Y %H:%M:%S", time.localtime()) + " </p>")
     print str(i) + " listing(s) added."
+
+raw_input('press enter...')
