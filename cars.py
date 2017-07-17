@@ -5,6 +5,8 @@ import time
 from time import gmtime, strftime
 import math
 import sys
+from ftplib import FTP
+
 
 
 def wait():
@@ -83,6 +85,14 @@ if (added == 0):
 else:
     with open("cars.html", "a") as myfile:
         myfile.write("<p style = \"font-size: 30px;\">--------------------------------------------pulled on: " + strftime("%a, %d %b %Y %H:%M:%S", time.localtime()) + " </p>")
-    print str(added) + " listing(s) added."
+    print str(i) + " listing(s) added."
+    #ftp = FTP('ftp.calhat.com')
+    #ftp.login("calhatco","lj48GbN3g8")
+    #ftp.cwd('public_html')
+    #ftp.retrbinary('cars.html', open("/Users/Hunter 1/Desktop/vroom/cars.html", 'wb').write)
+
+
+
+
 
 raw_input('press enter...')
