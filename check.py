@@ -14,7 +14,7 @@ with open('/Users/Hunter 1/Desktop/vroom/cars.html', 'r') as myfile:
     data=myfile.read().replace('\n', '')
 for i in links:
     s = urllib.urlopen(i).read()
-    if ((s.find("This posting has expired.") != -1) or (s.find("Post not found.") != -1) or (s.find("This posting has been deleted by its author.") != -1)):
+    if ((s.find("This posting has") != -1) or (s.find("Post not found.") != -1)):
         count+=1
         print(i + " is no longer available.")
         ispot = data.find(i)
