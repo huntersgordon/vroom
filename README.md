@@ -1,5 +1,5 @@
 # vrööm
-### Pulls several recent craigslist listings of cheap AMG Mercedes-Benzes in the Los Angeles San Fernando Valley and pops them up as OSX Notifications
+### Pulls recent craigslist listings of cheap AMG Mercedes-Benzes in the Los Angeles San Fernando Valley Area and outputs them to an html file
 
 # Step 1
 ```
