@@ -1,6 +1,6 @@
 import os
 import urllib
-with open('/Users/Hunter 1/Desktop/vroom/cars.html', 'r') as myfile:
+with open('cars.html', 'r') as myfile:
     data=myfile.read().replace('\n', '')
 links = []
 while (data.find("href") != -1):
@@ -10,7 +10,7 @@ while (data.find("href") != -1):
 
 s = ""
 count = 0
-with open('/Users/Hunter 1/Desktop/vroom/cars.html', 'r') as myfile:
+with open('cars.html', 'r') as myfile:
     data=myfile.read().replace('\n', '')
 for i in links:
     s = urllib.urlopen(i).read()
@@ -21,7 +21,7 @@ for i in links:
         modified = data[0:ispot-10] + "p style = \"color: red\" " + data[ispot-9:]
         with open("cars.html", "w") as myfile:
             myfile.write(modified)
-        with open('/Users/Hunter 1/Desktop/vroom/cars.html', 'r') as myfile:
+        with open('cars.html', 'r') as myfile:
             data=myfile.read().replace('\n', '')
     else:
         print(i + " is a good link.")
