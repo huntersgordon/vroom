@@ -9,11 +9,11 @@ pip install python-craigslist
 ```
 brew install terminal-notifier
 ```
-# Add listings to cars.html file:
+Add listings to cars.html file:
 ```
 python2.7 openAMG.py 
 ```
-# Update the cars.html file to illustrate which listings are no longer available:
+Update the cars.html file to illustrate which listings are no longer available:
 ```
 python2.7 openAMG.py
 ````
