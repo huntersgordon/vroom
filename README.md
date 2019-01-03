@@ -28,9 +28,6 @@ python2.7 openAMG.py
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>https://github.com/julienXX/terminal-notifier </p>
 
-```
-please subscribe, comment and if you liked this video make sure to leave a thumbs up
-```
 
 
 
