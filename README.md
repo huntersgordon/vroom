@@ -9,10 +9,14 @@ pip install python-craigslist
 ```
 brew install terminal-notifier
 ```
-# Step 3
+# Add listings to cars.html file:
 ```
 python2.7 openAMG.py 
 ```
+# Update the cars.html file to illustrate which listings are no longer available:
+```
+python2.7 openAMG.py
+````
 
 #### creds to: 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;julio malegria for his craigslist interface</p><br>
