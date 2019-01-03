@@ -5,7 +5,7 @@
 ```
 pip install python-craigslist
 ```
-# Step 2
+# Step 2 (Optional)
 ```
 brew install terminal-notifier
 ```
