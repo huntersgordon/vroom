@@ -19,7 +19,7 @@ if (not len(sys.argv) < 2 and ((sys.argv[1]) == "clear")):
     exit()
 
 if (not len(sys.argv) < 2 and ((sys.argv[1]) == "check")):
-    os.system("python2.7 /Users/Hunter\\ 1/Desktop/vroom/check.py")
+    os.system("python2.7 check.py")
     exit()
 
 if (len(sys.argv) > 1):
@@ -53,13 +53,13 @@ i = 1
 added = 0
 sofar = ""
 
-with open('/Users/Hunter 1/Desktop/vroom/cars.html', 'r') as myfile:
+with open('cars.html', 'r') as myfile:
     data=myfile.read().replace('\n', '')
 
 #took out geotagged=True
 for result in search.get_results(sort_by='price_asc'): #,limit = 50
     if ((data.find(result['name'].encode('utf-8')) == -1) and (sofar.find(result['name'].lower()) == -1)):
-        with open("/Users/Hunter 1/Desktop/vroom/cars.html", "a") as myfile: #append the listing
+        with open("cars.html", "a") as myfile: #append the listing
             myfile.write("<a href = \"" + result['url'].encode('utf-8') + "\">" + str(i) + ": " + result['price'].encode('utf-8') + " " + result['name'].encode('utf-8') + " " + result['url'].encode('utf-8') + "\n" + "</a><br><br>")
             added = added + 1
             sofar += result['name'].lower()
